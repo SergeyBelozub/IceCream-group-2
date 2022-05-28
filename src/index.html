@@ -28,6 +28,15 @@
     <include src="./partials/modal.html"></include>
 
     <script type="module" src="./mob-menu.js"></script>
-    
+    <script defer src="./slide.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // инициализация слайдера
+        var slider = new SimpleAdaptiveSlider('.slider', {
+          autoplay: true,
+          interval: 10000,
+        });
+      });
+    </script>
   </body>
 </html>

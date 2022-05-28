@@ -169,7 +169,7 @@
   background-image: url(../images/prodacts/pic1_sm.png);
 }
 
-// /* Adds points after card title */
+/* Adds points after card title */
 .prodacts-card__item:nth-child(1)::after {
   content: '';
   position: absolute;
@@ -181,7 +181,7 @@
   height: 280px;
   background-image: url(../images/prodacts/points.png);
 }
-// ===============================
+
 .prodacts-card__title {
   margin-bottom: 64px;
   font-family: 'Titan One';

@@ -70,8 +70,13 @@
   text-align: center;
   letter-spacing: 0.04em;
   background: repeating-linear-gradient(
+<<<<<<< Updated upstream
     var(--secondary-background) ;,
     var(--secondary-background) ; 30px,
+=======
+    var(--secondary-background),
+    var(--secondary-background) 30px,
+>>>>>>> Stashed changes
     #e1e1e1 30px,
     #e1e1e1 31px
   );
@@ -84,7 +89,11 @@
     transform: translate(-50% -50%);
     width: 54px;
     height: 40px;
+<<<<<<< Updated upstream
     background-image: url('./images/customer-reviews/icon-temples.svg');
+=======
+    background-image: url('../images/customer-reviews/icon-temples.svg');
+>>>>>>> Stashed changes
     @media screen and (min-width: 1280px) {
       top: 20px;
     }

@@ -1,0 +1,121 @@
+<button type="button" class="hero__button" data-modal-open>
+  Заказать услугу
+</button>
+
+<div class="modal__backdrop modal--is-hidden" data-modal>
+  <div class="modal">
+    <form class="form" name="callback" autocomplete="on">
+      <h2 class="form__title">Select product</h2>
+      <div class="form__products">
+        <label class="form__card">
+          <input type="checkbox" name="icecream" class="form__choose" /><span
+            class="form__cardWrapper"
+            ><img
+              src="./images/modal/icecreampic.png"
+              alt=""
+              class="form__image" /></span
+        ></label>
+        <label class="form__card">
+          <input type="checkbox" name="milkshake" class="form__choose" /><span
+            class="form__cardWrapper"
+            ><img
+              src="./images/modal/icecoffepic.png"
+              alt=""
+              class="form__image" /></span
+        ></label>
+        <label class="form__card">
+          <input type="checkbox" name="icecoffee" class="form__choose" /><span
+            class="form__cardWrapper"
+            ><img
+              src="./images/modal/milkshakepic.png"
+              alt=""
+              class="form__image" /></span
+        ></label>
+      </div>
+      <div class="quantity">
+        <ul class="quantity__list">
+          <li
+            class="quantity__item isHidden quantity__item--icecream"
+            id="icecream"
+          >
+            <p class="quantity__text">Set quantity of icecream:</p>
+            <label>
+              <input
+                type="nubmer"
+                class="form__field quantity__input"
+                min="1"
+                value="1"
+              />
+            </label>
+            pcs.
+            <button class="quantity__btn" id="icecream">x</button>
+          </li>
+          <li
+            class="quantity__item isHidden quantity__item--milkshake"
+            id="milkshake"
+          >
+            <p class="quantity__text">Set quantity of milkshake:</p>
+            <label>
+              <input
+                type="nubmer"
+                class="form__field quantity__input"
+                min="1"
+                value="1"
+            /></label>
+            pcs.
+            <button class="quantity__btn" id="milkshake">x</button>
+          </li>
+          <li
+            class="quantity__item isHidden quantity__item--icecoffee"
+            id="icecoffee"
+          >
+            <p class="quantity__text">Set quantity of icecoffee:</p>
+            <label>
+              <input
+                type="nubmer"
+                class="form__field quantity__input"
+                min="1"
+                value="1"
+              />
+            </label>
+            pcs.
+            <button class="quantity__btn" id="icecoffee">x</button>
+          </li>
+        </ul>
+      </div>
+      <button data-modal-close class="modal__close">x</button>
+      <h2 class="form__title">Input information</h2>
+      <label class="form__label">
+        <span class="form__field-group">
+          <input
+            type="text"
+            name="name"
+            class="form__field"
+            placeholder="Your name"
+          />
+        </span>
+      </label>
+      <label class="form__label">
+        <span class="form__field-group">
+          <input
+            type="tel"
+            name="phone"
+            class="form__field"
+            placeholder="Your phone"
+          />
+        </span>
+      </label>
+      <label class="form__label">
+        <span class="form__field-group">
+          <input
+            type="email"
+            name="email"
+            class="form__field"
+            placeholder="Your email"
+          />
+        </span>
+      </label>
+      <input type="submit" value="Send order" class="form__button" />
+    </form>
+  </div>
+</div>

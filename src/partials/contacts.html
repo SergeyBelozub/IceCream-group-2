@@ -142,18 +142,31 @@
       </li>
     </ul>
     <div class="contacts__filter">
-      <button class="btn-filter btn-filter--our" type="button">
+      <button class="btn-filter btn-filter--our" type="button" data-modal-open>
         Our Locations
         <svg class="btn-filter__icon" width="5" height="8">
-          <use href="#"></use>
+          <use
+            href="./images/contacts/icons-contacts.svg#icon-contacts-vector-icon"
+          ></use>
         </svg>
       </button>
       <button class="btn-filter btn-filter--franchise" type="button">
         Franchise
         <svg class="btn-filter__icon" width="5" height="8">
-          <use href="#"></use>
+          <use
+            href="./images/contacts/icons-contacts.svg#icon-contacts-vector-icon"
+          ></use>
         </svg>
       </button>
+    </div>
+    <div class="contacts_backdrop backdrop is-hidden" data-modal>
+      <div class="contacts_modal modal">
+        <button class="modal_button-close" data-modal-close>
+          <svg class="modal__icon-close" width="16" height="16">
+            <use href="./images/contacts/icons-contacts.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>

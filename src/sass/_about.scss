@@ -1,5 +1,6 @@
 .section__about {
   background-color: #fff5f6;
+  padding-top: 40px;
 
   @media screen and(max-width:767px) {
     background-image: url(../images/about/sectionbg_sm.png);
@@ -20,6 +21,7 @@
 
   @media screen and(min-width:1280px) {
     padding-bottom: 0;
+    padding-top: 60px;
 
     background-image: url(../images/about/sectionbg_lg.png);
     background-repeat: no-repeat;

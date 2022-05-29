@@ -1,6 +1,6 @@
 .section__about {
   background-color: #fff5f6;
-  
+  outline: 1px solid tomato;
 
   @media screen and(max-width:767px) {
     padding-top: 40px;
@@ -53,7 +53,6 @@
   text-align: center;
   text-transform: uppercase;
   color: #FFA5BA;
-  
 
   @media screen and(max-width:767px) {
       font-size: 18px;
@@ -91,23 +90,18 @@
       margin-right: auto;
       margin-left: auto;
 
-      
   }
 
   @media screen and(min-width:768px) and(max-width:1279px) {
       font-size: 55px;
       margin-bottom: 40px;
-      
   }
 
   @media screen and(min-width:1280px) {
       font-size: 58px;
-      margin-bottom: 60px;
-      
+      margin-bottom: 79px;
   }
-  
 }
-
 .about__blocks {
   @media screen and(min-width:768px) and(max-width:1279px) {
     display: flex;
@@ -154,11 +148,16 @@
 
 .about__info {
   display: inline-block;
+  
 
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
     padding-right: 80px;
   }
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    margin-bottom: 40px;
+  }
+
 
   @media screen and(min-width:1280px) {
     margin-bottom: 40px;
@@ -173,17 +172,20 @@
   font-size: 12px;
   line-height: 1.62;
   color: #000000;
+  
 
   margin-bottom: 26px;
   text-align: left;
 
   @media screen and(min-width:768px) and(max-width:1279px) {
     font-size: 14px;
+    
   }
 
   @media screen and(min-width:1280px) {
     font-size: 16px;
     margin-bottom: 32px;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -194,19 +196,31 @@
   line-height: 1.62;
   color: #907e82;
   text-align: left;
+  letter-spacing: 0.04em;
 
   @media screen and(min-width:768px) and(max-width:1279px) {
     font-size: 14px;
+    letter-spacing: 0.04em;
   }
 
   @media screen and(min-width:1280px) {
     font-size: 16px;
+    letter-spacing: 0.04em;
   }
 }
 
 .about__desc--one {
   display: block;
   margin-bottom: 15px;
+
+  @media screen and(min-width:768px) and (max-width:127px) {
+    margin-bottom: 27px;
+  }
+
+  @media screen and (min-width:1280px) {
+    margin-bottom: 27px;
+    
+  }
 }
 .about__btn {
   display: block;

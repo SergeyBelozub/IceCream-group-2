@@ -78,7 +78,6 @@
 
 // CARD LIST - start
 .products__card-list {
-  margin: 0 auto;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-basis: calc(100% / 3 - 32px);

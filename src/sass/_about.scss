@@ -1,6 +1,5 @@
 .section__about {
   background-color: #fff5f6;
-  outline: 1px solid tomato;
 
   @media screen and(max-width:767px) {
     padding-top: 40px;
@@ -53,7 +52,7 @@
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
-  color: #FFA5BA;
+  color: var(--secondary-text-color-pink);
 
   @media screen and(max-width:767px) {
       font-size: 18px;
@@ -79,7 +78,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #D41443;
+  color: var(--text-color-pink);
   margin-top: 16px;
 
   @media screen and(max-width:767px) {
@@ -172,7 +171,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
-  color: #000000;
+  color: var(--main-color-black);
   
 
   margin-bottom: 26px;

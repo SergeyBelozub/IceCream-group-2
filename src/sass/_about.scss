@@ -38,7 +38,7 @@
   }
 }
 
-.about__title{
+.about__title {
   display: block;
   font-family: Titan One;
   font-style: normal;
@@ -46,60 +46,51 @@
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
-  color: #FFA5BA;
-  
+  color: #ffa5ba;
 
   @media screen and(max-width:767px) {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   @media screen and(min-width:768px) and(max-width:1279px) {
-      font-size: 26px;
-      
+    font-size: 26px;
   }
 
   @media screen and(min-width:1280px) {
-      font-size: 30px;
-      
+    font-size: 30px;
   }
-  
 }
 
-.about__name{
-  font-family:Titan One;
+.about__name {
+  font-family: Titan One;
   font-style: normal;
   font-weight: 400;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #D41443;
+  color: #d41443;
   margin-top: 16px;
 
   @media screen and(max-width:767px) {
-      display: block;
-      max-width: 200px;
-      font-size: 34px;
-      margin-bottom: 32px;
-      margin-top: 16px;
-      margin-right: auto;
-      margin-left: auto;
-
-      
+    display: block;
+    max-width: 200px;
+    font-size: 34px;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media screen and(min-width:768px) and(max-width:1279px) {
-      font-size: 55px;
-      margin-bottom: 40px;
-      
+    font-size: 55px;
+    margin-bottom: 40px;
   }
 
   @media screen and(min-width:1280px) {
-      font-size: 58px;
-      margin-bottom: 60px;
-      
+    font-size: 58px;
+    margin-bottom: 60px;
   }
-  
 }
 
 .about__blocks {
@@ -151,7 +142,7 @@
 
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
-    padding-right: 80px;
+    padding-right: 60px;
   }
 
   @media screen and(min-width:1280px) {
@@ -165,7 +156,7 @@
   font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.62;
+  line-height: 1.58;
   color: #000000;
 
   margin-bottom: 26px;
@@ -185,7 +176,7 @@
   font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.62;
+  line-height: 1.58;
   color: #907e82;
   text-align: left;
 

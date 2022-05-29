@@ -10,7 +10,11 @@
   flex-direction: column;
   align-items: center;
 }
-
+.advantages__item {
+  padding-right: 50px;
+  @media screen and (max-width: 767px) {
+  }
+}
 .advantages__item:not(:last-child) {
   margin-bottom: 32px;
 }

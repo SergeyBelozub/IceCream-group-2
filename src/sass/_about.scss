@@ -22,6 +22,7 @@
 
   @media screen and(min-width:768px) and(max-width:1279px) {
     padding-top: 20px;
+    padding-bottom: 40px;
     
   }
   @media screen and(min-width:1280px) {
@@ -106,7 +107,7 @@
   @media screen and(min-width:768px) and(max-width:1279px) {
     display: flex;
     align-items: flex-start;
-    margin-top: 40px;
+   
   }
 
   @media screen and(min-width:1280px) {
@@ -223,10 +224,13 @@
   }
 }
 .about__btn {
-  display: block;
-  display: flex;
   width: 176px;
   height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: #ffffff;
   color: rgba(212, 20, 67, 1);
   border: transparent;
@@ -237,8 +241,7 @@
   font-size: 14px;
   line-height: 18px;
 
-  align-items: center;
-  text-align: center;
+  
   padding-left: 37px;
   padding-right: 37px;
 }

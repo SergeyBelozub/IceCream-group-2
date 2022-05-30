@@ -6,9 +6,16 @@
     modal: document.querySelector("[data-modal]"),
   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+    refs.modal.addEventListener("click", closeModal);
 
+
+    function closeModal(e) {
+        if (e.target === document.querySelector('.modal') ) {
+            refs.modal.classList.add("modal--is-hidden");
+        }
+    }  
   function toggleModal() {
     refs.modal.classList.toggle("modal--is-hidden");
     }
@@ -23,7 +30,6 @@ const otherRefs = {
 };
 
 otherRefs.productContainer.addEventListener('click', openQuantity);
-
 
 function openQuantity(e) {
     if (e.target.nodeName === 'INPUT') {
@@ -50,6 +56,7 @@ function delQuant(e) {
     for (let checkbox of otherRefs.checkboxes) {
         if (checkbox.name === e.target.id) {
             checkbox.checked = false;
+            checkbox.parentNode.classList.remove('form__card--checked');
         }
     }
 }

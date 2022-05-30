@@ -1,0 +1,2 @@
+(()=>{const o={openModalBtn:document.querySelector(".btn-filter--second"),closeModalBtn:document.querySelector(".modal-second_button-close"),modal:document.querySelector(".backdrop__second-modal"),body:document.querySelector(".body")};function e(){o.body.classList.toggle("no-scroll"),o.modal.classList.toggle("is-hidden")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)})();
+//# sourceMappingURL=index.facf23fd.js.map

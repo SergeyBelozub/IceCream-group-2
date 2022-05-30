@@ -1,0 +1,2 @@
+(()=>{const e={openMenuBtn:document.querySelector(".menu-open-btn"),closeMenuBtn:document.querySelector(".menu-close-btn"),closeMenuBtn2:document.querySelector(".menu-close"),menu:document.querySelector(".mob-menu"),body:document.querySelector(".body")};function n(){e.menu.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n),e.closeMenuBtn2.addEventListener("click",n)})();
+//# sourceMappingURL=index.eecd8685.js.map

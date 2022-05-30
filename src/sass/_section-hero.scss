@@ -25,13 +25,16 @@ body {
 .section-hero {
   overflow: hidden;
   background-color: var(--background-color-pink);
-  min-width: 320px;
+  // min-width: 320px;
   @media screen and (min-width: 768px) {
-    min-width: 768px;
+    // min-width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1280px;
+    // max-width: 1280px;
   }
+}
+.container-hero {
+  position: relative;
 }
 .section-hero__ellipse {
   position: absolute;

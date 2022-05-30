@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,6 +26,22 @@
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
     <include src="./partials/modal.html"></include>
-    <script type="module" src="./modal.js"></script>
+
+
+    <script type="module" src="./mob-menu.js"></script>
+    <script type="module" src="./contacts-modal.js"></script>
+    <!-- contact -->
+    <script type="module" src="./contacts-modal-first.js"></script>
+    <script type="module" src="./contacts-modal-second.js"></script>
+    <script defer src="./slide.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // инициализация слайдера
+        var slider = new SimpleAdaptiveSlider('.slider', {
+          autoplay: true,
+          interval: 10000,
+        });
+      });
+    </script>
   </body>
 </html>

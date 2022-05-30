@@ -301,7 +301,7 @@
         max-width: 600px;
         max-height: 600px;
     
-        background-image:url(../../images/sectionbg_sm.png);
+        background-image:url(../images/about/sectionbg_sm.png);
         background-repeat:no-repeat;
         background-size:contain;
         background-position-y: 95%;
@@ -311,7 +311,7 @@
         screen and (-o-min-device-pixel-ratio: 2/1),
         screen and (-webkit-min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {background-image:url(../../images/sectionbg_sm@2x.png);
+        screen and (min-resolution: 2dppx) {background-image:url(../images/about/sectionbg_sm@2x.png);
     }
        
     }
@@ -319,7 +319,7 @@
     @media screen and(min-width:1280px){
         max-width: 800px;
         max-height: 800px;
-        background-image:url(../../images/sectionbg_lg.png);
+        background-image:url(../images/about/sectionbg_lg.png);
         background-repeat:no-repeat;
         background-size:contain;
         background-position-y: 95%;
@@ -329,7 +329,7 @@
         screen and (-o-min-device-pixel-ratio: 2/1),
         screen and (-webkit-min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {background-image:url(../../images/sectionbg_lg@2x.png);}
+        screen and (min-resolution: 2dppx) {background-image:url(../images/about/sectionbg_lg@2x.png);}
     }
     }
 
@@ -377,7 +377,7 @@
     content: "";
     width: 8px;
     height: 10px;
-    background-image: url(../../icons/btnarrow3.svg);
+    background-image: url(../images/about/btnarrow3.svg);
     background-repeat: no-repeat;
     background-size: contain;
     transform: rotate(180deg);

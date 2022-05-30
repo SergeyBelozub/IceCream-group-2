@@ -23,9 +23,13 @@
   @media screen and(min-width:768px) and(max-width:1279px) {
     padding-top: 20px;
     padding-bottom: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   @media screen and(min-width:1280px) {
     padding-top: 60px;
+    padding-left: 14px;
+    padding-right: 0;
 
     background-image: url(../images/about/sectionbg_lg.png);
     background-repeat: no-repeat;
@@ -44,17 +48,6 @@
   }
 }
 
-.container__about {
-  @media screen and(min-width:768px) and(max-width:1279px) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  @media screen and(min-width:1280px) {
-    padding-left: 14px;
-    padding-right: 0;
-  }
-}
 .about__title {
   display: block;
   font-family: Titan One;
@@ -119,6 +112,8 @@
 
   @media screen and(min-width:1280px) {
     display: flex;
+    justify-content: space-between;
+    padding-right: 161px;
   }
 }
 
@@ -138,7 +133,7 @@
   @media screen and(min-width:1280px) {
     width: 501px;
     height: 501px;
-    margin-right: 139px;
+    // margin-right: 139px;
     margin-bottom: 39px;
   }
 }

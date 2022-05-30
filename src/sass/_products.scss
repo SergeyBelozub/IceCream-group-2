@@ -87,13 +87,13 @@
 
 .products__card {
   padding: 160px 40px 40px;
-  width: 100%;
+  // width: 100%;
   height: 489px;
   border-radius: 24px;
   margin-left: auto;
   margin-right: auto;
   @media screen and (max-width: 767px) {
-    max-width: 280px;
+    // max-width: 280px;
   }
   @media screen and (min-width: 768px) {
     padding: 118px 32px 40px;
@@ -139,7 +139,8 @@
   content: '';
   position: absolute;
   top: -29%;
-  left: -1%;
+  // left: -1%;
+  left: calc((100% - 280px) / 2);
   background-repeat: no-repeat;
   width: 280px;
   height: 280px;
@@ -168,7 +169,8 @@
   content: '';
   position: absolute;
   top: -29%;
-  left: -1%;
+  // left: -1%;
+  left: calc((100% - 280px) / 2);
   background-repeat: no-repeat;
   width: 280px;
   height: 280px;
@@ -196,7 +198,8 @@
   content: '';
   position: absolute;
   top: -29%;
-  left: -1%;
+  // left: -1%;
+  left: calc((100% - 280px) / 2);
   background-repeat: no-repeat;
   width: 280px;
   height: 280px;
@@ -227,15 +230,17 @@
   content: '';
   position: absolute;
   top: 241%;
-  left: 43%;
+  // left: 43%;
+  left: calc((100% - 26px) / 2);
   width: 26px;
   height: 6px;
+
   background-repeat: no-repeat;
   background-image: url(../images/products/points.png);
 
   @media screen and (min-width: 1280px) {
     top: 200%;
-    left: 43%;
+    // left: 43%;
   }
 }
 
@@ -257,7 +262,7 @@
   text-transform: uppercase;
   color: var(--main-color-white);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
   }

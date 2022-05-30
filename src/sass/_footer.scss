@@ -112,11 +112,11 @@
 
     background-color: var(--secondary-text-color-pink);
     fill: var(--main-color-white);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-        background-color: #d41443;
+        background-color: var(--text-color-pink);
     }
 }
 

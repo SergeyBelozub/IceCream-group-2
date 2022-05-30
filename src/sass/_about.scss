@@ -1,6 +1,7 @@
 .section__about {
   background-color: #fff5f6;
-
+}
+.container__about {
   @media screen and(max-width:767px) {
     padding-top: 40px;
     background-image: url(../images/about/sectionbg_sm.png);
@@ -22,7 +23,6 @@
   @media screen and(min-width:768px) and(max-width:1279px) {
     padding-top: 20px;
     padding-bottom: 40px;
-    
   }
   @media screen and(min-width:1280px) {
     padding-top: 60px;
@@ -44,16 +44,16 @@
   }
 }
 
-.container__about{
+.container__about {
   @media screen and(min-width:768px) and(max-width:1279px) {
     padding-left: 32px;
-    padding-right: 34px;}
+    padding-right: 34px;
+  }
 
-    @media screen and(min-width:1280px) {
-      padding-left: 14px;
-      padding-right: 0;
-    }
-
+  @media screen and(min-width:1280px) {
+    padding-left: 14px;
+    padding-right: 0;
+  }
 }
 .about__title {
   display: block;
@@ -65,8 +65,6 @@
   text-transform: uppercase;
 
   color: var(--secondary-text-color-pink);
-
- 
 
   @media screen and(max-width:767px) {
     font-size: 18px;
@@ -94,37 +92,33 @@
   margin-top: 16px;
 
   @media screen and(max-width:767px) {
-      display: block;
-      max-width: 200px;
-      font-size: 34px;
-      margin-bottom: 32px;
-      margin-top: 16px;
-      margin-right: auto;
-      margin-left: auto;
-
+    display: block;
+    max-width: 200px;
+    font-size: 34px;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media screen and(min-width:768px) and(max-width:1279px) {
-      font-size: 55px;
-      margin-bottom: 40px;
+    font-size: 55px;
+    margin-bottom: 40px;
   }
 
   @media screen and(min-width:1280px) {
-      font-size: 58px;
-      margin-bottom: 79px;
-
+    font-size: 58px;
+    margin-bottom: 79px;
   }
 }
 .about__blocks {
   @media screen and(min-width:768px) and(max-width:1279px) {
     display: flex;
     align-items: flex-start;
-   
   }
 
   @media screen and(min-width:1280px) {
     display: flex;
-    
   }
 }
 
@@ -155,7 +149,6 @@
 
   @media screen and(min-width:1280px) {
     width: 463px;
-    
   }
 }
 
@@ -169,7 +162,6 @@
   @media screen and(min-width:768px) and(max-width:1279px) {
     margin-bottom: 40px;
   }
-
 
   @media screen and(min-width:1280px) {
     margin-bottom: 40px;
@@ -185,15 +177,12 @@
 
   line-height: 1.62;
   color: var(--main-color-black);
-  
-
 
   margin-bottom: 26px;
   text-align: left;
 
   @media screen and(min-width:768px) and(max-width:1279px) {
     font-size: 14px;
-    
   }
 
   @media screen and(min-width:1280px) {
@@ -227,13 +216,12 @@
   display: block;
   margin-bottom: 15px;
 
-  @media screen and(min-width:768px) and (max-width:127px) {
+  @media screen and(min-width:768px) and (max-width: 127px) {
     margin-bottom: 27px;
   }
 
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 27px;
-    
   }
 }
 .about__btn {
@@ -254,7 +242,6 @@
   font-size: 14px;
   line-height: 18px;
 
-  
   padding-left: 37px;
   padding-right: 37px;
 }
@@ -269,118 +256,113 @@
   margin-left: 15px;
 }
 
-
-.backdrop{
-    position: fixed;
-    top:0;
-    right: 0;   
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 165, 186, 1);
-
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 165, 186, 1);
 }
 
-.backdrop .is-hidden{
-    opacity:0;
-    pointer-events: none;
-
+.backdrop .is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
-.modal{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    padding: 30px 50px;
+  padding: 30px 50px;
 
-    background-color: #FFF5F6;
-    border-radius: 35px;
-    
+  background-color: #fff5f6;
+  border-radius: 35px;
 
-     @media screen and(max-width:1279px){
-        max-width: 600px;
-        max-height: 600px;
-    
-        background-image:url(../images/about/sectionbg_sm.png);
-        background-repeat:no-repeat;
-        background-size:contain;
-        background-position-y: 95%;
-        
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (-moz-min-device-pixel-ratio: 2),
-        screen and (-o-min-device-pixel-ratio: 2/1),
-        screen and (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {background-image:url(../images/about/sectionbg_sm@2x.png);
-    }
-       
-    }
+  @media screen and(max-width:1279px) {
+    max-width: 600px;
+    max-height: 600px;
 
-    @media screen and(min-width:1280px){
-        max-width: 800px;
-        max-height: 800px;
-        background-image:url(../images/about/sectionbg_lg.png);
-        background-repeat:no-repeat;
-        background-size:contain;
-        background-position-y: 95%;
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (-moz-min-device-pixel-ratio: 2),
-        screen and (-o-min-device-pixel-ratio: 2/1),
-        screen and (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {background-image:url(../images/about/sectionbg_lg@2x.png);}
-    }
-    }
-
-.form__field{
-    margin: 30px 30px 40px 30px;
-   
-}
-.form__input{
-    border:2px dotted pink;
-
-}
-.form__input:focus{
-    border:1px solid pink;
-}
-.form__field:focus{
-    color:rgba(212, 20, 67, 1);
-}
-.form__btn{
-    display: block;
-    display: flex;
-    max-width: 176px;
-    height: 44px;
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-
-    background-color: #ffffff;
-    color: rgba(212, 20, 67, 1);
-    border: 1px solid pink;
-    border-radius: 22px;
-
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    
-    align-items: center;
-    text-align: center;
-    padding-left: 45px;
-    padding-right: 45px
-}
-
-.form__btn::before{
-    content: "";
-    width: 8px;
-    height: 10px;
-    background-image: url(../images/about/btnarrow3.svg);
+    background-image: url(../images/about/sectionbg_sm.png);
     background-repeat: no-repeat;
     background-size: contain;
-    transform: rotate(180deg);
-    margin-right: 15px;
+    background-position-y: 95%;
 
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-moz-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/about/sectionbg_sm@2x.png);
+    }
+  }
+
+  @media screen and(min-width:1280px) {
+    max-width: 800px;
+    max-height: 800px;
+    background-image: url(../images/about/sectionbg_lg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 95%;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-moz-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/about/sectionbg_lg@2x.png);
+    }
+  }
+}
+
+.form__field {
+  margin: 30px 30px 40px 30px;
+}
+.form__input {
+  border: 2px dotted pink;
+}
+.form__input:focus {
+  border: 1px solid pink;
+}
+.form__field:focus {
+  color: rgba(212, 20, 67, 1);
+}
+.form__btn {
+  display: block;
+  display: flex;
+  max-width: 176px;
+  height: 44px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+
+  background-color: #ffffff;
+  color: rgba(212, 20, 67, 1);
+  border: 1px solid pink;
+  border-radius: 22px;
+
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  align-items: center;
+  text-align: center;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.form__btn::before {
+  content: '';
+  width: 8px;
+  height: 10px;
+  background-image: url(../images/about/btnarrow3.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+  margin-right: 15px;
 }

@@ -1,13 +1,11 @@
 .section {
   width: 100%;
-
+  padding-bottom: 48px;
+  padding-top: 80px;
   margin-left: auto;
   margin-right: auto;
 }
-.container--reviews {
-  margin-bottom: 48px;
-  padding-top: 80px;
-}
+
 .not-displayed {
   position: fixed;
   transform: scale(0);

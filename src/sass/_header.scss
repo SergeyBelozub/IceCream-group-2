@@ -47,7 +47,6 @@
 // NAVIGATION
 
 .header-nav__menu {
-  z-index: 1;
   display: none;
   list-style: none;
 
@@ -55,6 +54,7 @@
     display: flex;
     justify-content: space-between;
     margin-left: auto;
+    z-index: 1;
   }
 }
 

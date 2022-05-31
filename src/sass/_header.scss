@@ -3,6 +3,7 @@
 }
 
 .header__container {
+  position: relative;
   padding-top: 8px;
   @media screen and (min-width: 768px) {
     padding-top: 32px;
@@ -46,6 +47,7 @@
   list-style: none;
 
   @media screen and (min-width: 1280px) {
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     margin-left: auto;

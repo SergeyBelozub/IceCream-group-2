@@ -1,5 +1,6 @@
 .section--reviews {
   padding-top: 80px;
+  padding-bottom: 48px;
 }
 .section {
   width: 100%;
@@ -7,9 +8,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.container--reviews {
-  margin-bottom: 48px;
-}
+
 .not-displayed {
   position: fixed;
   transform: scale(0);

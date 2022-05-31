@@ -93,7 +93,6 @@
 
   color: var(--text-color-pink);
   
-
   @media screen and(max-width:767px) {
     display: block;
     max-width: 200px;
@@ -270,7 +269,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: linear-gradient(to right, #ee9ca7, #ffdde1);
+  background-color: linear-gradient(to right, #ee9ca7, #ffdde1);}
 
 .about__backdrop .is-hidden {
   opacity: 0;

@@ -5,10 +5,8 @@
 }
 
 .section-hero {
+  overflow: hidden;
   background-color: var(--background-color-pink);
-  @media screen and (max-width: 767px) {
-    overflow: hidden;
-  }
 }
 .container-hero {
   position: relative;
@@ -16,6 +14,9 @@
 .section-hero__ice-cream-ellipse {
   position: absolute;
   position: relative;
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
   @media screen and (min-width: 320px) {
     top: 25px;
     left: 5%;

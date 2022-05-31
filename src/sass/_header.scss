@@ -1,19 +1,24 @@
 .header {
   background-color: var(--background-color-pink);
-}
-
-.header__container {
   padding-top: 8px;
   @media screen and (min-width: 768px) {
     padding-top: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 37px;
+  }
+}
+
+.header__container {
+  @media screen and (min-width: 768px) {
     padding-left: 32px;
     padding-right: 32px;
     display: flex;
     align-items: center;
   }
-
-  @media screen and (min-width: 1280px) {
-    padding-top: 37px;
+  @media screen and (min-width: 768px) {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 .header-nav {

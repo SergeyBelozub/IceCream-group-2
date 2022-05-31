@@ -54,7 +54,7 @@ function delQuant(e) {
     e.preventDefault();
     e.target.parentNode.classList.add('isHidden');
     for (let checkbox of otherRefs.checkboxes) {
-        if (checkbox.name === e.target.id) {
+        if (checkbox.name === e.target.name) {
             checkbox.checked = false;
             checkbox.parentNode.classList.remove('form__card--checked');
         }

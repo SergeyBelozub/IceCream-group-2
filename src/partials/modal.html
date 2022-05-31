@@ -1,7 +1,3 @@
-<button type="button" class="hero__button" data-modal-open>
-  Заказать услугу
-</button>
-
 <div class="modal__backdrop modal--is-hidden" data-modal>
   <div class="modal">
     <form class="form" name="callback" autocomplete="on">
@@ -41,14 +37,14 @@
             <p class="quantity__text">Set quantity of icecream:</p>
             <label>
               <input
-                type="nubmer"
+                type="number"
                 class="form__field quantity__input"
                 min="1"
                 value="1"
               />
             </label>
             pcs.
-            <button class="quantity__btn" id="icecream">x</button>
+            <button class="quantity__btn" name="icecream">x</button>
           </li>
           <li
             class="quantity__item isHidden quantity__item--milkshake"
@@ -57,13 +53,13 @@
             <p class="quantity__text">Set quantity of milkshake:</p>
             <label>
               <input
-                type="nubmer"
+                type="number"
                 class="form__field quantity__input"
                 min="1"
                 value="1"
             /></label>
             pcs.
-            <button class="quantity__btn" id="milkshake">x</button>
+            <button class="quantity__btn" name="milkshake">x</button>
           </li>
           <li
             class="quantity__item isHidden quantity__item--icecoffee"
@@ -72,14 +68,14 @@
             <p class="quantity__text">Set quantity of icecoffee:</p>
             <label>
               <input
-                type="nubmer"
+                type="number"
                 class="form__field quantity__input"
                 min="1"
                 value="1"
               />
             </label>
             pcs.
-            <button class="quantity__btn" id="icecoffee">x</button>
+            <button class="quantity__btn" name="icecoffee">x</button>
           </li>
         </ul>
       </div>

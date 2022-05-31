@@ -5,8 +5,10 @@
 }
 
 .section-hero {
-  overflow: hidden;
   background-color: var(--background-color-pink);
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
 }
 .container-hero {
   position: relative;

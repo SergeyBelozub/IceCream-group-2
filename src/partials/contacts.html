@@ -1,10 +1,10 @@
-<section class="contacts">
+<section class="contacts" id="#contacts">
   <div class="contacts__container container">
     <h2 class="visually-hidden">Locations</h2>
 
     <ul class="contacts__cards-list list">
       <li class="contacts__card item">
-        <strong class="contacts__text contacts__name">Cafe</strong>
+        <strong class="contacts__text name">Cafe</strong>
         <div class="contacts__about">
           <p class="contacts__text text--locality">Chicago</p>
           <p class="contacts__text text--info">
@@ -50,7 +50,7 @@
       </li>
 
       <li class="contacts__card item">
-        <strong class="contacts__text contacts__name">FOODTRUCK</strong>
+        <strong class="contacts__text name">FOODTRUCK</strong>
         <div class="contacts__about">
           <p class="contacts__text text--locality">Los Angeles</p>
           <p class="contacts__text text--info">
@@ -96,7 +96,7 @@
       </li>
 
       <li class="contacts__card item">
-        <strong class="contacts__text contacts__name">Cafe</strong>
+        <strong class="contacts__text name">Cafe</strong>
         <div class="contacts__about">
           <p class="contacts__text text--locality">New York</p>
           <p class="contacts__text text--info">
@@ -141,31 +141,193 @@
         </ul>
       </li>
     </ul>
-    <div class="contacts__filter">
-      <button class="btn-filter btn-filter--our" type="button" data-modal-open>
-        Our Locations
-        <svg class="btn-filter__icon" width="5" height="8">
-          <use
-            href="./images/contacts/icons-contacts.svg#icon-contacts-vector-icon"
-          ></use>
-        </svg>
-      </button>
-      <button class="btn-filter btn-filter--franchise" type="button">
-        Franchise
-        <svg class="btn-filter__icon" width="5" height="8">
-          <use
-            href="./images/contacts/icons-contacts.svg#icon-contacts-vector-icon"
-          ></use>
-        </svg>
-      </button>
-    </div>
-    <div class="contacts_backdrop backdrop is-hidden" data-modal>
-      <div class="contacts_modal modal">
-        <button class="modal_button-close" data-modal-close>
-          <svg class="modal__icon-close" width="16" height="16">
+    <ul class="contacts__filter-list list">
+      <li class="contacts__filter-item">
+        <button class="btn-filter button-filter-first" type="button">
+          Our Locations
+          <svg class="btn-filter__icon" width="5" height="8">
+            <use
+              href="./images/contacts/icons-contacts.svg#icon-contacts-vector-icon"
+            ></use>
+          </svg>
+        </button>
+      </li>
+      <li class="contacts__filter-item">
+        <button class="btn-filter btn-filter--second" type="button">
+          Franchise
+          <svg class="btn-filter__icon" width="5" height="8">
+            <use
+              href="./images/contacts/icons-contacts.svg#icon-contacts-vector-icon"
+            ></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+    <div class="contacts__filter"></div>
+
+    <!-- modal first -->
+    <div class="backdrop__first-modal backdrop is-hidden">
+      <div class="contacts__modal modal-first">
+        <button class="modal-first_button-close button-close">
+          <svg class="modal-first__icon-close" width="16" height="16">
             <use href="./images/contacts/icons-contacts.svg#icon-close"></use>
           </svg>
         </button>
+        <ul class="modal__local-list list">
+          <li class="modal__local-item item">
+            <div class="modal__item-thumb">
+              <h3 class="contacts__text modal__title name">
+                Monkey nice cream
+              </h3>
+              <p>
+                <a
+                  class="modal__link link"
+                  href="https://goo.gl/maps/ekHnk9vTcAszDAKdA"
+                  title="map"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Taras Shevchenko Boulevard, 26, Kyiv, 02000</a
+                >
+              </p>
+            </div>
+            <div class="modal__img-thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/contacts/contacts-logo@1x.png 1x,
+                    ./images/contacts/contacts-logo@2x.png 2x
+                  "
+                  media="(min-width: 320px)" />
+                <img
+                  class="image"
+                  src="./images/contacts/contacts-logo@1x.png"
+                  alt="Logo"
+              /></picture>
+            </div>
+          </li>
+          <li class="modal__local-item item">
+            <div class="modal__item-thumb">
+              <h3 class="contacts__text modal__title name">
+                Umka - Homemade Ice Cream
+              </h3>
+              <p>
+                <a
+                  class="modal__link link"
+                  href="https://goo.gl/maps/3Uzjcnchg4x19ecY8"
+                  title="map"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Kostolna street, 6, Kiev, 01001</a
+                >
+              </p>
+            </div>
+            <div class="modal__img-thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/contacts/contacts-logo@1x.png 1x,
+                    ./images/contacts/contacts-logo@2x.png 2x
+                  "
+                  media="(min-width: 320px)" />
+                <img
+                  class="image"
+                  src="./images/contacts/contacts-logo@1x.png"
+                  alt="Logo"
+              /></picture>
+            </div>
+          </li>
+          <li class="modal__local-item item">
+            <div class="modal__item-thumb">
+              <h3 class="contacts__text modal__title name">Bubble waffle</h3>
+              <p>
+                <a
+                  class="modal__link link"
+                  href="https://goo.gl/maps/BqbnjpxiWxVWHhim8"
+                  title="map"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Postal Square, 3, Kiev, 02000</a
+                >
+              </p>
+            </div>
+            <div class="modal__img-thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/contacts/contacts-logo@1x.png 1x,
+                    ./images/contacts/contacts-logo@2x.png 2x
+                  "
+                  media="(min-width: 320px)" />
+                <img
+                  class="image"
+                  src="./images/contacts/contacts-logo@1x.png"
+                  alt="Logo"
+              /></picture>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- modal second-->
+    <div class="backdrop__second-modal backdrop is-hidden">
+      <div class="contacts__modal modal-second">
+        <button class="modal-second_button-close button-close">
+          <svg class="modal-second__icon-close" width="16" height="16">
+            <use href="./images/contacts/icons-contacts.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="modal__local-list list">
+          <li class="modal__local-item item">
+            <div class="modal__item-thumb">
+              <h3 class="contacts__text modal__title name">L'Kafa Cafe</h3>
+              <p>
+                <a
+                  class="modal__link link"
+                  href="https://goo.gl/maps/aw2mogUS9MmWFBzx9"
+                  title="map"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Borshchahivska street, 154, Kyiv, 03056</a
+                >
+              </p>
+            </div>
+            <div class="modal__img-thumb">
+              <svg class="icon-modal-second" width="50" height="50">
+                <use
+                  href="./images/contacts/icons-contacts.svg#icon-contacts-icon-modal-second"
+                ></use>
+              </svg>
+            </div>
+          </li>
+          <li class="modal__local-item item">
+            <div class="modal__item-thumb">
+              <h3 class="contacts__text modal__title name">Very Well Cafe</h3>
+              <p>
+                <a
+                  class="modal__link link"
+                  href="https://goo.gl/maps/oRoqYn3NYUCMUmGK9"
+                  title="map"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Levanevskogo street, 2A, Kiev, 02000</a
+                >
+              </p>
+            </div>
+            <div class="modal__img-thumb">
+              <svg class="icon-modal-second" width="50" height="50">
+                <use
+                  href="./images/contacts/icons-contacts.svg#icon-contacts-icon-modal-second"
+                ></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

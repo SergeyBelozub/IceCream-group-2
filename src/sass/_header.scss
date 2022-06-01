@@ -47,6 +47,7 @@
 .header-nav__menu {
   display: none;
   list-style: none;
+  z-index: -1;
 
   @media screen and (min-width: 1280px) {
     z-index: 1;

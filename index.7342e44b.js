@@ -1,0 +1,2 @@
+(()=>{const o={openModalBtn:document.querySelector(".about__btn"),closeModalBtn:document.querySelector(".about__form__btn"),modal:document.querySelector(".about__backdrop"),body:document.querySelector(".body")};function e(){o.body.classList.toggle("no-scroll"),o.modal.classList.toggle("is-hidden")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)})();
+//# sourceMappingURL=index.7342e44b.js.map

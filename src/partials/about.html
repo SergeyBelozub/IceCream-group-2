@@ -1,6 +1,6 @@
 <section class="section__about" id="about">
   <div class="container container__about">
-    <span class="about__title">tradition and love</span>
+    <p class="about__title">tradition and love</p>
     <h2 class="about__name">how it’s made?</h2>
     <div class="about__blocks">
       <div class="about__picture">
@@ -47,16 +47,18 @@
             Aliquam erat volutpat. Aenean accumsan.
           </p>
         </div>
-        <button class="about__btn" type="button">Read more</button>
+        <button class="about__btn" type="button">
+          Read more
+        </button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- хочу добавить модалку -->
+<!-- Modal -->
 
-<!-- <div data-modal class="backdrop">
-  <div class="modal">
+<div class="about__backdrop is-hidden">
+  <div class="about__modal">
     <p class="about__txt">
       Ice cream contains nutrients that are good for your immune system. There
       are nutrients in ice cream that can boost your immune system. Ice cream is
@@ -65,17 +67,19 @@
       system.
     </p>
     <form class="about__form">
-      <p class="section__title">
+      <p class="about__title">
         Leave your contact-mail and we'll send you discount coupon
       </p>
-      <div class="form__field">
+      <div class="about__form__field">
         <label class="about__text" for="email">E-mail :</label>
-        <input class="form__input" type="email" name="email" id="email" />
-        <svg class="form__icon" width="15px" height="12px">
-          <use href=""></use>
-        </svg>
+        <input
+          class="about__form__input"
+          type="email"
+          name="email"
+          id="email"
+        />
       </div>
     </form>
-    <button class="form__btn">Back</button>
+    <button class="about__form__btn">Close</button>
   </div>
-</div> -->
+</div>

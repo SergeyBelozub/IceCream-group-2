@@ -1,7 +1,17 @@
 .section__about {
   background-color: #fff5f6;
-  padding-top: 40px;
+   @media screen and(max-width:767px) {
+    padding-top: 40px;}
+
+   @media screen and(min-width:768px) and(max-width:1279px) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    
+  }
+  @media screen and(min-width:1280px) {
+    padding-top: 60px;}
 }
+
 .container__about {
   @media screen and(max-width:767px) {
     background-image: url(../images/about/sectionbg_sm.png);
@@ -19,13 +29,13 @@
       background-image: url(../images/about/sectionbg_sm@2x.png);
     }
   }
-
   @media screen and(min-width:768px) and(max-width:1279px) {
-    padding-top: 20px;
-    padding-bottom: 40px;
-  }
+    padding-left: 32px;
+    padding-right: 32px;}
+
   @media screen and(min-width:1280px) {
-    padding-top: 60px;
+    padding-left: 14px;
+    padding-right: 0;
 
     background-image: url(../images/about/sectionbg_lg.png);
     background-repeat: no-repeat;
@@ -44,17 +54,6 @@
   }
 }
 
-.container__about {
-  @media screen and(min-width:768px) and(max-width:1279px) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  @media screen and(min-width:1280px) {
-    padding-left: 14px;
-    padding-right: 0;
-  }
-}
 .about__title {
   display: block;
   font-family: Titan One;
@@ -63,6 +62,8 @@
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
+
+  margin-bottom: 16px;
 
   color: var(--secondary-text-color-pink);
 
@@ -80,6 +81,7 @@
 }
 
 .about__name {
+  display: block;
   font-family: Titan One;
   font-style: normal;
   font-weight: 400;
@@ -89,14 +91,13 @@
   text-transform: uppercase;
 
   color: var(--text-color-pink);
-  margin-top: 16px;
-
+  
   @media screen and(max-width:767px) {
     display: block;
     max-width: 200px;
     font-size: 34px;
+
     margin-bottom: 32px;
-    margin-top: 16px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -112,6 +113,11 @@
   }
 }
 .about__blocks {
+  @media screen and(max-width:767px) {
+    padding-top: 32px;
+    
+  }
+
   @media screen and(min-width:768px) and(max-width:1279px) {
     display: flex;
     align-items: flex-start;
@@ -119,6 +125,8 @@
 
   @media screen and(min-width:1280px) {
     display: flex;
+    justify-content: space-between;
+    padding-right: 161px;
   }
 }
 
@@ -126,7 +134,6 @@
   @media screen and(max-width:767px) {
     display: block;
     align-items: center;
-    margin-top: 32px;
     margin-bottom: 40px;
   }
   @media screen and(min-width:768px) and(max-width:1279px) {
@@ -138,7 +145,6 @@
   @media screen and(min-width:1280px) {
     width: 501px;
     height: 501px;
-    margin-right: 139px;
     margin-bottom: 39px;
   }
 }
@@ -165,7 +171,7 @@
 
   @media screen and(min-width:1280px) {
     margin-bottom: 40px;
-    margin-top: 72px;
+    padding-top: 72px;
   }
 }
 
@@ -262,24 +268,30 @@
   margin-left: 15px;
 }
 
-.backdrop {
+.about__backdrop {
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 165, 186, 1);
-}
+  opacity: 1;
+  background: rgba(238, 156, 167);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(238,156,167,0.23) 100%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.backdrop .is-hidden {
+
+.about__backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
-.modal {
+
+.about__modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  // overflow: scroll;
 
   padding: 30px 50px;
 
@@ -324,19 +336,26 @@
   }
 }
 
-// .form__field {
-//   margin: 30px 30px 40px 30px; поменяй класс!(перебивает другой класс)
-// }
-.form__input {
+
+.about__form__field {
+  margin: 30px 30px 40px 30px;
+}
+.about__form__input {
+
   border: 2px dotted pink;
+  width: 300px;
+  height: 44px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:focus {
-  border: 1px solid pink;
+.about__form__input:focus {
+  border: 1px solid rgba(212, 20, 67, 1);
 }
-.form__field:focus {
+.about__form__field:focus {
   color: rgba(212, 20, 67, 1);
 }
-.form__btn {
+.about__form__btn {
   display: block;
   display: flex;
   max-width: 176px;
@@ -358,11 +377,11 @@
 
   align-items: center;
   text-align: center;
-  padding-left: 45px;
+  padding-left: 40px;
   padding-right: 45px;
 }
 
-.form__btn::before {
+.about__form__btn::before {
   content: '';
   width: 8px;
   height: 10px;

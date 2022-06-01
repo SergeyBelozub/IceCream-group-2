@@ -5,19 +5,23 @@
 }
 
 .section-hero {
-  overflow-x: hidden;
   background-color: var(--background-color-pink);
   padding-top: 136px;
   padding-bottom: 158px;
+  @media screen and (max-width: 767px) {
+    overflow-x: hidden;
+  }
+
   @media screen and (min-width: 768px) {
-    padding-top: 20px;
+    padding-top: 102px;
     padding-bottom: 16px;
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 60px;
+    padding-top: 147px;
     padding-bottom: 60px;
   }
 }
+
 .container-hero {
   position: relative;
 }
@@ -46,7 +50,7 @@
   min-height: 344px;
   overflow: hidden;
   @media screen and (min-width: 768px) {
-    overflow: visible;
+    // overflow: visible;
     min-width: 335px;
     min-height: 333px;
   }

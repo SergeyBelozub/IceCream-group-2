@@ -1,91 +1,67 @@
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-body {
-  position: relative;
-}
-/*.header {
+.section-hero {
+  background-color: var(--background-color-pink);
+  padding-top: 136px;
+  padding-bottom: 158px;
   @media screen and (max-width: 767px) {
-      min-width: 320px;
-      height: 58px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      min-width: 768px;
-      height: 82px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      max-width: 1280px;
-      height: 87px;
-    }
-}*/
-.section-hero {
-  overflow: hidden;
-  background-color: var(--background-color-pink);
-  // min-width: 320px;
+    overflow: hidden;
+  }
   @media screen and (min-width: 768px) {
-    // min-width: 768px;
+    padding-top: 20px;
+    padding-bottom: 16px;
   }
-  @media screen and (min-width: 1200px) {
-    // max-width: 1280px;
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-}
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.section-hero {
-  overflow: hidden;
-  background-color: var(--background-color-pink);
-  /*min-width: 320px;
-@media screen and (min-width: 768px) {
-  min-width: 768px;
-}
-@media screen and (min-width: 1280px) {
-  max-width: 1280px;
-}*/
 }
 .container-hero {
   position: relative;
 }
-/*.section-hero__ellipse-ice-cream {
-  position: absolute;
-}*/
+.section-hero__ice-cream-ellipse {
+  position: relative;
+  @media screen and (min-width: 320px) {
+    top: -111px;
+    left: 5%;
+    background-color: transparent;
+  }
+  @media screen and (min-width: 768px) {
+    top: -57px;
+    left: 32%;
+  }
+  @media screen and (min-width: 1280px) {
+    top: -95px;
+    left: 34%;
+  }
+}
 .section-hero__ellipse {
   position: absolute;
   border-radius: 50%;
   background-color: #ffa5ba;
   border: none;
-  top: 19%;
-  left: 33px;
   min-width: 346px;
   min-height: 344px;
+  overflow: hidden;
   @media screen and (min-width: 768px) {
-    top: 10%;
-    left: 32%;
+    overflow: visible;
     min-width: 335px;
     min-height: 333px;
   }
   @media screen and (min-width: 1280px) {
-    top: 7%;
-    left: 36%;
     min-width: 534px;
     min-height: 534px;
   }
 }
 .section-hero__ice-cream {
   position: absolute;
-  bottom: 0;
-  left: 86px;
+  top: 9px;
+  left: 85px;
   @media screen and (min-width: 768px) {
-    left: 42%;
+    top: 37px;
+    left: 74px;
   }
   @media screen and (min-width: 1280px) {
-    left: 43%;
+    top: 54px;
+    left: 119px;
   }
 }
 .section-hero__product-list {
@@ -94,19 +70,18 @@ body {
     display: block;
     position: absolute;
     width: 43px;
-    top: 16px;
+    top: -4px;
     right: 32px;
   }
   @media screen and (min-width: 1280px) {
     width: 92px;
-    top: 69px;
-    right: 0;
+    top: 9px;
+    right: 16px;
   }
 }
 .section-hero__product-item {
   color: #ffffff;
   text-align: right;
-  white-space: pre-wrap;
   &:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -158,28 +133,25 @@ body {
     display: block;
     position: absolute;
     right: 32px;
-    bottom: 0;
+    bottom: -16px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 16px;
+    bottom: -60px;
   }
 }
-
 .section-hero__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background-color: transparent;
-  padding-top: 136px;
-  padding-bottom: 158px;
   /*z-index: 4;*/
   min-width: 280px;
   @media screen and (min-width: 768px) {
-    min-width: 768px;
-    padding-top: 20px;
-    padding-bottom: 16px;
+    width: 768px;
   }
   @media screen and (min-width: 1280px) {
-    min-width: 1280px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    width: 1280px;
   }
 }
 .section-hero__name-company {
@@ -187,7 +159,7 @@ body {
   font-family: 'Titan One';
   font-weight: 400;
   letter-spacing: 0.04em;
-  white-space: pre-wrap;
+  width: 218px;
   text-transform: uppercase;
   color: #ffffff;
   z-index: 0;
@@ -196,11 +168,12 @@ body {
   @media screen and (min-width: 768px) {
     font-size: 22px;
     line-height: 1.14;
+    width: 162px;
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 24px;
-    font-size: 38px;
-    line-height: 1.16;
+    font-size: 34px;
+    line-height: 1.41;
     width: 277px;
   }
 }
@@ -219,25 +192,28 @@ body {
     font-size: 58px;
   }
 }
-.section-hero__buttons {
+.section-hero__btns {
   display: flex;
   flex-direction: row;
   align-content: flex-start;
   z-index: 0;
 }
-.section-hero__button {
+.section-hero__btn {
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 
   &:not(:last-child) {
     margin-right: 8px;
   }
 }
-.section-hero__button-choose,
-.section-hero__button-about {
+
+.section-hero__btn-choose,
+.section-hero__btn-about {
+  padding: 15px 0 15px 0;
+  text-align: center;
+  display: block;
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: 8px;
@@ -245,13 +221,15 @@ body {
   text-align: center;
   border: 1px solid transparent;
   border-radius: 20px;
+  cursor: pointer;
   @media screen and (min-width: 1280px) {
     font-size: 14px;
-    line-height: 1.29px;
+    line-height: 1.28;
+    padding: 11px 0;
   }
 }
 
-.section-hero__button-choose {
+.section-hero__btn-choose {
   width: 61px;
   height: 24px;
   background-color: #d41443;
@@ -265,7 +243,7 @@ body {
     height: 40px;
   }
 }
-.section-hero__button-about {
+.section-hero__btn-about {
   width: 82px;
   height: 24px;
   background-color: #ffffff;
@@ -296,32 +274,9 @@ body {
   @media screen and (min-width: 1280px) {
     flex-wrap: wrap;
     align-content: space-around;
-    padding-top: 20%;
     width: 200px;
   }
 }
-
-// .section-hero__text {
-//   z-index: 1;
-//   @media screen and (min-width: 768px) {
-//     font-size: 8px;
-//     line-height: 1.5;
-//     color: #ffffff;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     font-size: 14px;
-//     line-height: 1.4;
-//   }
-// }
-// .section-hero__continuation {
-//   display: none;
-// }
-// .section-hero__button-direction {
-//   background-color: inherit;
-//   border: none;
-//   border-radius: 50%;
-//   cursor: pointer;
-// }
 .section-hero__text,
 .section-hero__all-text {
   z-index: 1;

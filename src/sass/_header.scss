@@ -48,8 +48,8 @@
 
 .header-nav__menu {
   display: none;
-  list-style: none;
   z-index: -1;
+  list-style: none;
 
   @media screen and (min-width: 1280px) {
     display: flex;

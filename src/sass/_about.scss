@@ -275,13 +275,14 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  visibility: visible;
-  background-color: linear-gradient(to right, #ee9ca7, #ffdde1);
+  background: rgba(238, 156, 167);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(238,156,167,0.23) 100%);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 
 .about__backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -290,8 +291,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 99;
-  overflow: scroll;
+  // overflow: scroll;
 
   padding: 30px 50px;
 

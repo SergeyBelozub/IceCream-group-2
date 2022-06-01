@@ -1,9 +1,9 @@
 .section__about {
   background-color: #fff5f6;
+  padding-top: 40px;
 }
 .container__about {
   @media screen and(max-width:767px) {
-    padding-top: 40px;
     background-image: url(../images/about/sectionbg_sm.png);
     background-repeat: no-repeat;
     background-size: contain;

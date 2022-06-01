@@ -5,28 +5,38 @@
 }
 
 .section-hero {
+  overflow-x: hidden;
   background-color: var(--background-color-pink);
+  padding-top: 136px;
+  padding-bottom: 158px;
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .container-hero {
   position: relative;
 }
 .section-hero__ice-cream-ellipse {
   position: relative;
-  // @media screen and (min-width: 320px) {
-  //   top: 25px;
-  //   left: 5%;
-  //   background-color: transparent;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   top: -37px;
-  //   left: 32%;
-  // }
-  // @media screen and (min-width: 1280px) {
-  //   top: -35px;
-  //   left: 34%;
-  // }
+  @media screen and (min-width: 320px) {
+    top: -111px;
+    left: 5%;
+    background-color: transparent;
+  }
+  @media screen and (min-width: 768px) {
+    top: -57px;
+    left: 32%;
+  }
+  @media screen and (min-width: 1280px) {
+    top: -95px;
+    left: 34%;
+  }
 }
-
 .section-hero__ellipse {
   position: absolute;
   border-radius: 50%;
@@ -64,13 +74,13 @@
     display: block;
     position: absolute;
     width: 43px;
-    top: 16px;
+    top: -4px;
     right: 32px;
   }
   @media screen and (min-width: 1280px) {
     width: 92px;
-    top: 69px;
-    right: 0;
+    top: 9px;
+    right: 16px;
   }
 }
 .section-hero__product-item {
@@ -127,10 +137,11 @@
     display: block;
     position: absolute;
     right: 32px;
-    bottom: 0;
+    bottom: -16px;
   }
   @media screen and (min-width: 1280px) {
     right: 0;
+    bottom: -60px;
   }
 }
 .section-hero__content {
@@ -138,20 +149,8 @@
   flex-direction: column;
   align-items: flex-start;
   background-color: transparent;
-  padding-top: 136px;
-  padding-bottom: 158px;
   /*z-index: 4;*/
   min-width: 280px;
-  @media screen and (min-width: 768px) {
-    min-width: 768px;
-    padding-top: 20px;
-    padding-bottom: 16px;
-  }
-  @media screen and (min-width: 1280px) {
-    min-width: 1280px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 .section-hero__name-company {
   margin-bottom: 20px;
@@ -292,20 +291,20 @@
   border-radius: 50%;
   cursor: pointer;
   transition: 1000ms;
+  &:hover,
+  &:focus,
   &.section-hero__arrow-right:hover,
   &.section-hero__arrow-right:focus {
     transform: translateY (-100%) rotate (-90deg);
   }
 }
-/*.section-hero__text--cover {
-  overflow: hidden;
+.section-hero__text--cover {
+  display: none;
 }
 
-.section-hero__btn-direction.section-hero__arrow-right:hover .section-hero__text--cover,
-.section-hero__btn-direction.section-hero__arrow-right:focus .section-hero__text--cover {
- overflow: visible;
- position: absolute;
- bottom: 100%;
- left: 0;
-  
-}*/
+.section-hero__btn-direction.section-hero__arrow-right:hover
+  .section-hero__text--cover,
+.section-hero__btn-direction.section-hero__arrow-right:focus
+  .section-hero__text--cover {
+  display: block;
+}

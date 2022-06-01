@@ -137,7 +137,7 @@
 
 .products__card:nth-child(1)::before {
   content: '';
-  z-index: 1;
+
   position: absolute;
   top: -29%;
   // left: -1%;
@@ -169,7 +169,7 @@
 .products__card:nth-child(2)::before {
   content: '';
   position: absolute;
-  z-index: 1;
+
   top: -29%;
   // left: -1%;
   left: calc((100% - 280px) / 2);
@@ -199,7 +199,7 @@
 .products__card:nth-child(3)::before {
   content: '';
   position: absolute;
-  z-index: 1;
+
   top: -29%;
   // left: -1%;
   left: calc((100% - 280px) / 2);

@@ -1,12 +1,28 @@
 .gallery {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: #fff;
     background-image: linear-gradient(to bottom,
-            #FFF5F6 0%,
-            #FFF5F6 40%,
-            #fff 40%,
-            #fff 100%);
+        #FFF5F6 0%,
+        #FFF5F6 43%,
+        #fff 43%,
+        #fff 100%);
+        @media screen and (min-width: 768px) {
+            background-image: linear-gradient(to bottom,
+                #FFF5F6 0%,
+                #FFF5F6 42%,
+                #fff 42%,
+                #fff 100%);
+            }
+        @media screen and (min-width: 1280px) {
+            background-image: linear-gradient(to bottom,
+                #FFF5F6 0%,
+                #FFF5F6 41.5%,
+                #fff 41.5%,
+                #fff 100%);
+            }
 
 }
 
@@ -23,15 +39,15 @@
             padding-right: 18px;
         }
     
-        @media screen and (min-width: 1200px) {
-            width: 1200px;
+        @media screen and (min-width: 1280px) {
+            width: 1280px;
             padding-left: 16px;
             padding-right: 16px;
         }
     }
 
-.gallery_img-cont {
-    margin-left: auto;
-    margin-right: auto;
-}
+// .gallery_img-cont {
+//     margin-left: auto;
+//     margin-right: auto;
+// }
 

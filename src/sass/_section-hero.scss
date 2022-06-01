@@ -3,73 +3,89 @@
   margin: 0;
   list-style: none;
 }
-
-.section-hero {
-  background-color: var(--background-color-pink);
-  padding-top: 136px;
-  padding-bottom: 158px;
+body {
+  position: relative;
+}
+/*.header {
   @media screen and (max-width: 767px) {
-    overflow-x: hidden;
-  }
-
+      min-width: 320px;
+      height: 58px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      min-width: 768px;
+      height: 82px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      max-width: 1280px;
+      height: 87px;
+    }
+}*/
+.section-hero {
+  overflow: hidden;
+  background-color: var(--background-color-pink);
+  // min-width: 320px;
   @media screen and (min-width: 768px) {
-    padding-top: 102px;
-    padding-bottom: 16px;
+    // min-width: 768px;
   }
-  @media screen and (min-width: 1280px) {
-    padding-top: 147px;
-    padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    // max-width: 1280px;
   }
 }
-
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.section-hero {
+  overflow: hidden;
+  background-color: var(--background-color-pink);
+  /*min-width: 320px;
+@media screen and (min-width: 768px) {
+  min-width: 768px;
+}
+@media screen and (min-width: 1280px) {
+  max-width: 1280px;
+}*/
+}
 .container-hero {
   position: relative;
 }
-.section-hero__ice-cream-ellipse {
-  position: relative;
-  @media screen and (min-width: 320px) {
-    top: -111px;
-    left: 5%;
-    background-color: transparent;
-  }
-  @media screen and (min-width: 768px) {
-    top: -57px;
-    left: 32%;
-  }
-  @media screen and (min-width: 1280px) {
-    top: -95px;
-    left: 34%;
-  }
-}
+/*.section-hero__ellipse-ice-cream {
+  position: absolute;
+}*/
 .section-hero__ellipse {
   position: absolute;
   border-radius: 50%;
   background-color: #ffa5ba;
   border: none;
+  top: 19%;
+  left: 33px;
   min-width: 346px;
   min-height: 344px;
-  overflow: hidden;
   @media screen and (min-width: 768px) {
-    // overflow: visible;
+    top: 10%;
+    left: 32%;
     min-width: 335px;
     min-height: 333px;
   }
   @media screen and (min-width: 1280px) {
+    top: 7%;
+    left: 36%;
     min-width: 534px;
     min-height: 534px;
   }
 }
 .section-hero__ice-cream {
   position: absolute;
-  top: 9px;
-  left: 85px;
+  bottom: 0;
+  left: 86px;
   @media screen and (min-width: 768px) {
-    top: 37px;
-    left: 74px;
+    left: 42%;
   }
   @media screen and (min-width: 1280px) {
-    top: 54px;
-    left: 119px;
+    left: 43%;
   }
 }
 .section-hero__product-list {
@@ -78,18 +94,19 @@
     display: block;
     position: absolute;
     width: 43px;
-    top: -4px;
+    top: 16px;
     right: 32px;
   }
   @media screen and (min-width: 1280px) {
     width: 92px;
-    top: 9px;
-    right: 16px;
+    top: 69px;
+    right: 0;
   }
 }
 .section-hero__product-item {
   color: #ffffff;
   text-align: right;
+  white-space: pre-wrap;
   &:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -141,27 +158,36 @@
     display: block;
     position: absolute;
     right: 32px;
-    bottom: -16px;
-  }
-  @media screen and (min-width: 1280px) {
-    right: 0;
-    bottom: -60px;
+    bottom: 0;
   }
 }
+
 .section-hero__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background-color: transparent;
+  padding-top: 136px;
+  padding-bottom: 158px;
   /*z-index: 4;*/
   min-width: 280px;
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .section-hero__name-company {
   margin-bottom: 20px;
   font-family: 'Titan One';
   font-weight: 400;
   letter-spacing: 0.04em;
-  width: 218px;
+  white-space: pre-wrap;
   text-transform: uppercase;
   color: #ffffff;
   z-index: 0;
@@ -170,13 +196,11 @@
   @media screen and (min-width: 768px) {
     font-size: 22px;
     line-height: 1.14;
-    width: 162px;
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 24px;
     font-size: 34px;
     line-height: 1.41;
-    width: 277px;
   }
 }
 .section-hero__head-name {
@@ -194,13 +218,13 @@
     font-size: 58px;
   }
 }
-.section-hero__btns {
+.section-hero__buttons {
   display: flex;
   flex-direction: row;
   align-content: flex-start;
   z-index: 0;
 }
-.section-hero__btn {
+.section-hero__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,8 +235,8 @@
     margin-right: 8px;
   }
 }
-.section-hero__btn-choose,
-.section-hero__btn-about {
+.section-hero__button-choose,
+.section-hero__button-about {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: 8px;
@@ -226,7 +250,7 @@
   }
 }
 
-.section-hero__btn-choose {
+.section-hero__button-choose {
   width: 61px;
   height: 24px;
   background-color: #d41443;
@@ -240,7 +264,7 @@
     height: 40px;
   }
 }
-.section-hero__btn-about {
+.section-hero__button-about {
   width: 82px;
   height: 24px;
   background-color: #ffffff;
@@ -276,8 +300,7 @@
   }
 }
 .section-hero__text {
-  position: relative;
-  // z-index: 1;
+  z-index: 1;
   @media screen and (min-width: 768px) {
     font-size: 8px;
     line-height: 1.5;
@@ -288,27 +311,12 @@
     line-height: 1.4;
   }
 }
-.section-hero__btn-direction {
+.section-hero__continuation {
+  display: none;
+}
+.section-hero__button-direction {
   background-color: inherit;
-  padding: 0;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  transition: 1000ms;
-  &:hover,
-  &:focus,
-  &.section-hero__arrow-right:hover,
-  &.section-hero__arrow-right:focus {
-    transform: translateY (-100%) rotate (-90deg);
-  }
-}
-.section-hero__text--cover {
-  display: none;
-}
-
-.section-hero__btn-direction.section-hero__arrow-right:hover
-  .section-hero__text--cover,
-.section-hero__btn-direction.section-hero__arrow-right:focus
-  .section-hero__text--cover {
-  display: block;
 }

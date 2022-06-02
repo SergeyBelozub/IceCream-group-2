@@ -1,33 +1,34 @@
 <section class="section-hero">
+  <div class="section-hero__ellipse"></div>
+  <picture class="section-hero__ice-cream">
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ./images/section-hero/ice-cream_320.png    171w,
+        ./images/section-hero/ice-cream_320@2x.png 342w
+      "
+      sizes="(max-width: 767px) 171px, 35.6vw"
+    />
+    <source
+      media="(min-width: 1280px)"
+      srcset="
+        ./images/section-hero/ice-cream.png    236w,
+        ./images/section-hero/ice-cream@2x.png 472w
+      "
+      sizes="(min-width: 1280px) 236px, 18.44vw"
+    />
+    <source
+      media="(max-width: 1279px)"
+      srcset="
+        ./images/section-hero/ice-cream_768.png    143w,
+        ./images/section-hero/ice-cream_768@2x.png 286w
+      "
+      sizes="(max-width: 1279px) 143px, 18.62vw"
+    />
+    <img src="./images/section-hero/ice-cream.png" alt="pitcher of milk" />
+  </picture>
+
   <div class="container container-hero">
-    <!-- <div class="section-hero__ellipse"></div>
-    <picture class="section-hero__ice-cream">
-      <source
-        media="(max-width: 767px)"
-        srcset="
-          ./images/section-hero/ice-cream_320.png    171w,
-          ./images/section-hero/ice-cream_320@2x.png 342w
-        "
-        sizes="(max-width: 767px) 171px, 35.6vw"
-      />
-      <source
-        media="(min-width: 1280px)"
-        srcset="
-          ./images/section-hero/ice-cream.png    236w,
-          ./images/section-hero/ice-cream@2x.png 472w
-        "
-        sizes="(min-width: 1280px) 236px, 18.44vw"
-      />
-      <source
-        media="(max-width: 1279px)"
-        srcset="
-          ./images/section-hero/ice-cream_768.png    143w,
-          ./images/section-hero/ice-cream_768@2x.png 286w
-        "
-        sizes="(max-width: 1279px) 143px, 18.62vw"
-      />
-      <img src="./images/section-hero/ice-cream.png" alt="pitcher of milk" />
-    </picture> -->
     <picture class="section-hero__girl-with-ice-cream">
       <source
         media="(min-width: 1280px)"
@@ -96,39 +97,40 @@
         <div class="section-hero__dictum">
           <p class="section-hero__text">
             Dream ice cream. What does it taste like? What flavor does it have?
-            What does it look like? What do you imagine when you think of
-            him?
-          <button type="button" class="section-hero__btn-direction">
-            <span class="section-hero__all-text">Dream ice cream. What does it taste like? What flavor does it
-              have? What does it look like? What do you imagine when you think
-              of him? Here you will get what you want. With a variety of unique
-              flavors, textures andtoppings, you create a dessert that will
-              leave you with an unforgettable experience.</span
-            >
-            <picture class="section-hero__arrow-right">
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/section-hero/arrow-right.png    26w,
-                  ./images/section-hero/arrow-right@2x.png 52w
-                "
-                sizes="(min-width: 1280px) 26px, 2vw"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  ./images/section-hero/arrow-right_768.png    18w,
-                  ./images/section-hero/arrow-right_768@2x.png 36w
-                "
-                sizes="(min-width: 768px) 18px, 2vw"
-              />
-              <img
-                src="./images/section-hero/arrow-right.png"
-                alt="right-arrow"
-                class="section-hero__rotate"
-              />
-            </picture>
-          </button>
+            What does it look like? What do you imagine when you think of him?
+            <button type="button" class="section-hero__btn-direction">
+              <span class="section-hero__all-text"
+                >Dream ice cream. What does it taste like? What flavor does it
+                have? What does it look like? What do you imagine when you think
+                of him? Here you will get what you want. With a variety of
+                unique flavors, textures andtoppings, you create a dessert that
+                will leave you with an unforgettable experience.</span
+              >
+              <picture class="section-hero__arrow-right">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/section-hero/arrow-right.png    26w,
+                    ./images/section-hero/arrow-right@2x.png 52w
+                  "
+                  sizes="(min-width: 1280px) 26px, 2vw"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/section-hero/arrow-right_768.png    18w,
+                    ./images/section-hero/arrow-right_768@2x.png 36w
+                  "
+                  sizes="(min-width: 768px) 18px, 2vw"
+                />
+                <img
+                  src="./images/section-hero/arrow-right.png"
+                  alt="right-arrow"
+                  class="section-hero__rotate"
+                />
+              </picture>
+            </button>
+          </p>
         </div>
       </div>
     </div>

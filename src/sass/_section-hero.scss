@@ -1,7 +1,8 @@
 .section-hero {
-  background-color: var(--background-color-pink);
+  position: relative;
   padding-top: 136px;
-  padding-bottom: 158px;
+  padding-bottom: 150px;
+  background-color: var(--background-color-pink);
   @media screen and (max-width: 767px) {
     overflow: hidden;
   }
@@ -15,53 +16,66 @@
   }
 }
 .container-hero {
-  position: relative;
-}
-.section-hero__ice-cream-ellipse {
-  position: relative;
-  @media screen and (min-width: 320px) {
-    top: -111px;
-    left: 5%;
-    background-color: transparent;
-  }
   @media screen and (min-width: 768px) {
-    top: -57px;
-    left: 32%;
+    position: relative;
+    padding-left: 32px;
+    padding-right: 32px;
   }
+
   @media screen and (min-width: 1280px) {
-    top: -95px;
-    left: 34%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
+// .section-hero__ice-cream-ellipse {
+//   position: relative;
+//   @media screen and (min-width: 320px) {
+//     top: -111px;
+//     left: 5%;
+//     background-color: transparent;
+//   }
+//   @media screen and (min-width: 768px) {
+//     top: -57px;
+//     left: 32%;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     top: -95px;
+//     left: 34%;
+//   }
+// }
 .section-hero__ellipse {
   position: absolute;
+  top: 25px;
+  left: calc(50vw - 120px);
+  display: block;
   border-radius: 50%;
   background-color: #ffa5ba;
   border: none;
   min-width: 346px;
   min-height: 344px;
-  overflow: hidden;
   @media screen and (min-width: 768px) {
-    overflow: visible;
+    top: -39px;
+    left: calc(50vw - 136px);
+    // overflow: visible;
     min-width: 335px;
     min-height: 333px;
   }
   @media screen and (min-width: 1280px) {
+    top: -33px;
+    left: calc(50vw - 100px);
     min-width: 534px;
     min-height: 534px;
   }
 }
 .section-hero__ice-cream {
   position: absolute;
-  top: 9px;
-  left: 85px;
+  bottom: 0;
+  left: calc(50vw - 40px);
   @media screen and (min-width: 768px) {
-    top: 37px;
-    left: 74px;
+    left: calc(50vw - 50px);
   }
   @media screen and (min-width: 1280px) {
-    top: 54px;
-    left: 119px;
+    left: calc(50vw);
   }
 }
 .section-hero__product-list {
@@ -70,7 +84,7 @@
     display: block;
     position: absolute;
     width: 43px;
-    top: -4px;
+    top: 13px;
     right: 32px;
   }
   @media screen and (min-width: 1280px) {
@@ -136,8 +150,8 @@
     bottom: -16px;
   }
   @media screen and (min-width: 1280px) {
-    right: 16px;
     bottom: -60px;
+    right: 16px;
   }
 }
 .section-hero__content {
@@ -145,14 +159,6 @@
   flex-direction: column;
   align-items: flex-start;
   background-color: transparent;
-  /*z-index: 4;*/
-  min-width: 280px;
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-  }
 }
 .section-hero__name-company {
   margin-bottom: 20px;

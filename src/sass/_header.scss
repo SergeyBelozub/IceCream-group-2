@@ -170,7 +170,8 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 250px;
+  // width: 250px;
+  width: 100vw;
   height: 100vh;
   display: flex;
   padding-top: 60px;
@@ -210,7 +211,6 @@
   @extend .btn;
   border: none;
   background-color: transparent;
-  margin: 0;
   padding: 0;
   position: absolute;
   top: 20px;
@@ -225,8 +225,8 @@
 
 .mob-menu__header-btn {
   display: flex;
-  max-width: 209px;
-  width: 100%;
+  align-self: center;
+  width: 209px;
   margin-bottom: 18px;
 
   @media screen and (min-width: 768px) {

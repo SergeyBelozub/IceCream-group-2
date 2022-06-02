@@ -1,0 +1,43 @@
+html,
+body {
+    scroll-behavior: smooth;
+  }
+
+.skroll{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.skroll-link{
+  display: block;
+    cursor: pointer;
+}
+
+.skroll a  {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  background: #FFB8CA;
+  border: 2px solid #D41443;
+  display: block;
+  border-radius: 50%;
+  text-decoration: none;
+
+}
+
+.skroll-up{
+  transform: rotate(-90deg);
+}
+
+.icon-skroll{
+  fill: #fff
+}
+
+.icon-skroll:hover,
+.icon-skroll:focus
+{
+  fill: #D41443; 
+}
